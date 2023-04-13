@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ressro</title>
+    <link rel="stylesheet" href="stylenew.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Sacramento&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster&family=Sacramento&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster&family=Lobster+Two&family=Sacramento&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster&family=Lobster+Two:ital,wght@0,400;1,700&family=Merriweather:wght@700&family=Sacramento&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <section class="top">
+  <header>
+    <nav class="container">
+      <div class="logo">
+        <img class="img1" src="images/Picsart_22-11-27_19-46-56-986.png" alt="" height="100px"width="120px">
+      </div>
+
+      <ul class="navigation">
+        <a href="#menu">
+          <li>Menu</li>
+        </a>
+        <a href="#gallery">
+          <li>About Us</li>
+        </a>
+        <a href="#regestration">
+          <li>Compare</li>
+        </a>
+        <a href="#Contactus">
+          <li>Contact Us</li>
+        </a>
+      </ul>
+    </nav>
+  </header>
+  <div id="mySidenav" class="sidenav">
+    <a href="#" id="About_US">About us</a>
+    <a href="#Resort" id="Ressort">Ressort</a>
+    <a href="#Food" id="Food">Food</a>
+
+
+
+    <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+    <h1 class=textmain>What is RESSOR</h1>
+      <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <p class=slide2text>We Help You to Compare Best Deal For ordering food and booking a Ressort </p>
+      <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="images\Picsart_22-11-27_20-12-22-282.jpg" style="width:600px; height:400px" alt="">
+      <div class="text"></div>
+    </div>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+    <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 4000); // Change image every 2 seconds
+    }
+    </script>
+    </section>
+    <section class="Food">
+      <div class="divfood">
+        <img class="ph1" src="https://tse3.mm.bing.net/th?id=OIP.7tVDj9laS8e1TXx6912fiAHaHO&pid=Api&P=0" >
+<h1 class="foodsectionheading">Food Section</h1>
+<h1 class="textforfoodsection">
+Want to Order Food online Check Best Deal here</h1>
+<button class="button buttonfood">Get Deals</button>
+</div>
+</section >
+
+<section class="Resort">
+
+
+<div class="divresort">
+  <img class="ph2" src="https://img.myloview.com/stickers/resort-outline-vector-icon-thin-line-black-resort-icon-flat-vector-simple-element-illustration-from-editable-luxury-concept-isolated-stroke-on-white-background-700-197804722.jpg" >
+<h1 class="resortsectionheading">Resort Section</h1>
+<h1 class="textforResortection">
+Want to Book a Resort/ Hotel online Check Best Deal here</h1>
+<button class="button buttonresort">Get Deals</button>
+</div>
+</section>
+
+
+
+    <section class="About_US">
+
+      <div class="divaboutus">
+        <h1 class="aboutusheading">About Us</h1>
+        <h1 class="textforAboutus">We Help You to Compare Best Deal For ordering food and booking a Ressort</h1>
+
+      </div>
+    </section>
+
+    <section class="contact_US">
+
+      <div class="divcontactus">
+          <img class="img2logo" src="images/Picsart_22-11-27_19-46-56-986.png" alt="" height="300px"width="220px">
+        <h1 class="contactusheading">Contact Us</h1>
+        <h1 class="textforcontactus">contact us through mobile number and our social media handles
+        90xxxxxxx , @theskylover</h1>
+
+      </div>
+    </section>
+  </body>
+</html>
